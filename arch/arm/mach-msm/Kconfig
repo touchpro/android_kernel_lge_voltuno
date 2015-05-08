@@ -1954,6 +1954,13 @@ config INTELLI_PLUG
 	help
 	  Generic Intelli-plug cpu hotplug driver for ARM SOCs.
 
+config CPU_UNDERCLOCK
+	bool "enable CPU underclocking of Cortex A7"
+	default n
+	help
+	  Simple CPU Underclocking Option to 192 & 249 MHz
+
+
 config MSM_AVS_HW
 	bool "Enable Adaptive Voltage Scaling (AVS)"
 	default n
@@ -2519,6 +2526,12 @@ config MSM_DLOAD_MODE
 		due to a kernel panic. Note that this doesn't by itself
 		make the kernel reboot on a kernel panic - that must be
 		enabled via another mechanism.
+
+config FORCE_FAST_CHARGE
+	bool "Force AC charge mode at will"
+	default y
+	help
+	  A simple sysfs interface to force adapters that are detected as USB to charge as AC.
 
 config MSM_JTAG
 	bool "Debug and ETM trace support across power collapse"

@@ -483,12 +483,12 @@
 		compatible = "qcom,msm-cpufreq";
 		qcom,cpu-mem-ports = <1 512>;
 		qcom,cpufreq-table =
-			<  300000  800 >,
-			<  384000  800 >,
-			<  600000 1600 >,
-			<  787200 1600 >,
-			<  998400 2664 >,
-			< 1190400 2664 >;
+			<  300000  762 >,
+			<  384000  762 >,
+			<  600000 1525 >,
+			<  787200 1525 >,
+			<  998400 2540 >,
+			< 1190400 2540 >;
 	};
 
 	spmi_bus: qcom,spmi@fc4c0000 {
@@ -1062,7 +1062,7 @@
 		label = "vchg_sns";
 		reg = <2>;
 		qcom,decimation = <0>;
-		qcom,pre-div-channel-scaling = <5>;
+		qcom,pre-div-channel-scaling = <2>;
 		qcom,calibration-type = "absolute";
 		qcom,scale-function = <0>;
 		qcom,hw-settle-time = <0>;
